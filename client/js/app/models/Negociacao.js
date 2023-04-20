@@ -7,21 +7,22 @@ class Negociacao {
         this._valor = valor;
     }
 
-    // Método
-    getVolume() {
-        return this._quantidade * this._valor;
-    }
+    // Método de encapsulamento
 
-    // Encapsulamento
-    getData() {
+    get data() {
         return this._data;
     }
 
-    getQuantidade() {
+    get quantidade() {
         return this._quantidade;
     }
 
-    getValor() {
+    get valor() {
         return this._valor;
     }
+    
+    get volume() {
+        return this._quantidade * this._valor;
+    }
+
 }
